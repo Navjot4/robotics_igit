@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+img{
+  width:100%;
+  height:500px;
+  background-repeat: no-repeat;
+
+}
+.heading{
+  margin-top: 20px;
+  text-align: center;
+}
+.qoute{
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  font-family: 'Montserrat',sans-serif;
+  color:white;
+}
+.container{
+  min-height: 100vh;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.timeline{
+  width:80%;
+  height: auto;
+  max-width: 800px;
+  margin:0 auto;
+  position:relative;
+}
+.timeline ul{
+  list-style:none;
+}
+.timeline ul li{
+  padding:20px;
+  background-color: #1e1f22;
+  color:white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child{
+  margin-bottom: 0;
+}
+.timeline-content h1{
+  font-size: 25px;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.timeline-content p{
+  font-size: 16px;
+  line-height: 1;
+}
+@media only screen and (min-width:768px){
+  .timeline::before{
+    content: '';
+    position: absolute;
+    height:100%;
+    width:2px;
+    left:52%;
+    background-color: gray;
+  }
+  .timeline ul li{
+    width:50%;
+    margin-bottom:50px;
+    position:relative;
+  }
+  .timeline ul li:nth-child(odd){
+    float:left;
+    clear:right;
+
+  }
+  .timeline ul li:nth-child(even){
+    float:right;
+    clear:left;
+  }
+
+}
+.bottom-container{
+  text-align:center;
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+.footer-link{
+  margin-left: 20px;
+}
+.event_heading{
+  text-align: center;
+}
+.event_photo1{
+  float:left;
+  width:20%;
+  height:20%;
+  margin-left: 20%;
+  margin-right:5%;
+}
+.event1_des{
+  margin: 100px auto 150px auto;
+}
+.event_photo2{
+  float:right;
+  width:20%;
+  height: 20%;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.event2_des{
+  padding-top:50px;
+  padding-left: 10px;
+  width:60%;
+  text-align: justify;
+  margin: 100px auto 150px auto;
+}
